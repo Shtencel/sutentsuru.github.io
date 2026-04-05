@@ -7,6 +7,35 @@
 <body>
     <h1>Добро пожаловать!</h1>
     <p>Веб-манга в процессе... (0/100)</p>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 2rem;
+            padding: 2rem;
+        }
+        .spinner {
+            display: inline-block;
+            width: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Загрузка 
+        <span id="spinner" class="spinner">-</span>
+    </p>
+
+    <script>
+        const spinnerEl = document.getElementById('spinner');
+        const frames = ['-', '\\', '|', '/'];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % frames.length;
+            spinnerEl.textContent = frames[index];
+        }, 120); // скорость смены символов (120 мс)
+    </script>
     <img src="12.png" alt="Заглушка">
 </body>
 </html>
