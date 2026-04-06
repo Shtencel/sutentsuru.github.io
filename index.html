@@ -25,13 +25,13 @@
             </p>
     <script>
         const spinnerEl = document.getElementById('spinner');
-        const frames = ['-', '\\', '|', '/'];
+        const frames = ['О.О','о.о', '-.-'];
         let index = 0;
 
         setInterval(() => {
             index = (index + 1) % frames.length;
             spinnerEl.textContent = frames[index];
-        }, 100); // скорость смены символов
+        }, 150); // скорость смены символов
     </script>
     <img src="12.png" alt="Заглушка">
 </body>
