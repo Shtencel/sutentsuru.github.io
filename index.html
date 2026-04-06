@@ -11,6 +11,12 @@
             font-family: monospace;
             font-size: 2rem;
             padding: 1rem;
+             display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* чтобы центрировать по высоте окна */
+    margin: 0;
         }
         .spinner {
             display: inline-block;
@@ -19,7 +25,6 @@
         }
     </style>
 </head>
-<body>
         <p>Веб-манга в процессе... (0/100)
        <span id="spinner" class="spinner">-</span>
             </p>
