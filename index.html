@@ -8,6 +8,22 @@
 <body>
     <h1>Добро пожаловать!</h1>
     <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;  /* центрирует картинку */
+}
+
+img {
+    display: block;      /* убирает лишние отступы снизу */
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;      /* центрирует по горизонтали */
+}
         body {
             font-family: monospace;
             font-size: 2rem;
@@ -29,7 +45,7 @@
         }
     </style>
 </head>
-        <p>Веб-манга в процессе... (0/100)
+        <p>Веб-манга в процессе... 3%
        <span id="spinner" class="spinner">-</span>
             </p>
     <script>
